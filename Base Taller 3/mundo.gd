@@ -23,13 +23,20 @@ var algo_escena = preload("res://algo.tscn")
 var puntaje = 0
 var modo_poder = false
 var vidas = 3
+var dulcesRestantes = 0
 
 @onready var jugador = $Omori
 
 func _ready():
 	construir()
-	for item in get_tree().get_nodes_in_group("dulces"):
-		item.recogido.connect(_on_recogido)
+	# 1. Guardamos la lista De dulces y jugos  en una variable local
+	var lista_dulces = get_tree().get_nodes_in_group("dulces")
+	dulcesRestantes = lista_dulces.size()
+	
+	# 2. Conectamos cada dulce usando esa lista
+	for item in lista_dulces:
+		item.recogido.connect(_on_recogido)	
+		
 	for enemigo in get_tree().get_nodes_in_group("enemigos"):
 		enemigo.toco_al_jugador.connect(_on_enemigo_toco)
 	$TimerPoder.timeout.connect(_on_timer_poder_timeout)
@@ -56,8 +63,13 @@ func _on_recogido(valor, da_poder):
 	$Marcador/Puntaje.text = "Puntaje: %d" % puntaje
 	if da_poder:
 		activar_poder()
-	if get_tree().get_nodes_in_group("dulces").size() == 0:
+	# se resta el dulce o jugo de la lista
+	dulcesRestantes -= 1
+	if dulcesRestantes <= 0:  # <--- Se cumple exactamente al recoger el último
 		$Marcador/Mensaje.text = "¡Encontraste todo!"
+	
+	#if get_tree().get_nodes_in_group("dulces").size() == 0:
+		#$Marcador/Mensaje.text = "¡Encontraste todo!"
 
 
 # ---------- Poder del jugo ----------
