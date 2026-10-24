@@ -195,7 +195,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="Forma"]
 size = Vector2(28, 24)
 
-[node name="Omori" type="CharacterBody2D" unique_id=247179176]
+[node name="Omori" type="CharacterBody2D" unique_id=247179176 groups=["omori"]]
 script = ExtResource("s")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1742988227]
