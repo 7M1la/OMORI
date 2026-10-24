@@ -13,7 +13,7 @@ const MAPA = [
 ]
 
 const COLOR_ALGO_NORMAL = Color(1, 1, 1, 1)
-const COLOR_ALGO_PODER = Color(0.35, 0.55, 1.0, 1)   # azul mientras dura el poder
+const COLOR_ALGO_PODER = Color(0.35, 0.55, 1.0, 1)  
 
 var dulce_escena = preload("res://dulce.tscn")
 var jugo_escena = preload("res://jugo.tscn")
@@ -42,6 +42,7 @@ func _ready():
 
 
 	$TimerPoder.timeout.connect(_on_timer_poder_timeout)
+	actualizar_hud()   # muestra "Puntaje: 0" y "Vidas: 3" al iniciar
 
 
 func construir():
@@ -64,7 +65,7 @@ func construir():
 
 func _on_recogido(valor, da_poder):
 	puntaje += valor
-	$Marcador/Puntaje.text = "Puntaje: %d" % puntaje
+	actualizar_hud()
 	if da_poder:
 		activar_poder()
 	dulcesRestantes -= 1
@@ -103,7 +104,6 @@ func _on_enemigo_toco(enemigo):
 	if modo_poder:
 		enemigo.volver_a_casa()
 		puntaje += 200
-		$Marcador/Puntaje.text = "Puntaje: %d" % puntaje
 	else:
 		
 		vidas -= 1
@@ -113,3 +113,8 @@ func _on_enemigo_toco(enemigo):
 			jugador.set_physics_process(false)
 		else:
 			jugador.asustarse()
+	actualizar_hud()   # refresca puntaje y vidas después de cada toque
+
+func actualizar_hud():
+	$Marcador/Puntaje.text = "Puntaje: %d" % puntaje
+	$Marcador/Vidas.text = "Vidas: %d" % vidas
