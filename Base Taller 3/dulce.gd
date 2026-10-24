@@ -1,9 +1,9 @@
 extends Area2D
 
-# Señal para avisar al mundo el valor recogido y si otorga poder
-signal recogido(valor)
+signal recogido(valor, da_poder)
 
 @export var valor = 10
+@export var da_poder = false  
 
 
 func _ready():
@@ -12,7 +12,6 @@ func _ready():
 	
 func _on_body_entered(body):
 	if body.is_in_group("omori"):
-		#print("recogida: +", valor)
-		remove_from_group("dulces") #eliminar del grupo dulces :p
-		recogido.emit(valor) #para emitir la señal de que se recogio
-		queue_free() #para que desaparexca el dulce
+		
+		recogido.emit(valor, da_poder) 
+		queue_free() 

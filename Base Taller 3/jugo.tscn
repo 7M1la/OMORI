@@ -9,6 +9,7 @@ radius = 14.0
 [node name="Jugo" type="Area2D" unique_id=1490706562 groups=["dulces"]]
 script = ExtResource("1_6xxbe")
 valor = 50
+da_poder = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=192376807]
 texture = ExtResource("1")

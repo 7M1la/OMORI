@@ -12,16 +12,22 @@ const MAPA = [
 	"#     .  E  o#",
 	"##############",
 ]
+
+const COLOR_ALGO_NORMAL = Color(1, 1, 1, 1)
+const COLOR_ALGO_PODER = Color(0.35, 0.55, 1.0, 1)   # azul mientras dura el poder
+
 var dulce_escena = preload("res://dulce.tscn")
 var jugo_escena = preload("res://jugo.tscn")
 var algo_escena = preload("res://algo.tscn")
 
 var puntaje = 0
+var modo_poder = false
 
 func _ready():
 	construir()
 	for item in get_tree().get_nodes_in_group("dulces"):
 		item.recogido.connect(_on_recogido)
+	$TimerPoder.timeout.connect(_on_timer_poder_timeout)
 
 func construir():
 	construir_bloques(MAPA, Color(0.15, 0.15, 0.15, 1))
@@ -40,8 +46,31 @@ func construir():
 				nodo.position = Vector2(col + 0.5, fila + 0.5) * CELDA
 				$Mapa.add_child(nodo)
 				
-func _on_recogido(valor):
+func _on_recogido(valor, da_poder):
 	puntaje += valor
 	$Marcador/Puntaje.text = "Puntaje: %d" % puntaje
+	if da_poder:
+		activar_poder()
 	if get_tree().get_nodes_in_group("dulces").size() == 0:
 		$Marcador/Mensaje.text = "¡Encontraste todo!"
+
+
+# ---------- Poder del jugo ----------
+
+# El poder usa un Timer: si recoges otro jugo, start() vuelve a poner los 8 s.
+func activar_poder():
+	modo_poder = true
+	$TimerPoder.start()
+	pintar_algos(COLOR_ALGO_PODER)
+	print("poder: sí")
+
+
+func _on_timer_poder_timeout():
+	modo_poder = false
+	pintar_algos(COLOR_ALGO_NORMAL)
+	print("poder: no")
+
+
+func pintar_algos(color: Color):
+	for enemigo in get_tree().get_nodes_in_group("enemigos"):
+		enemigo.modulate = color
