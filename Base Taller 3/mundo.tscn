@@ -10,3 +10,22 @@ script = ExtResource("1")
 
 [node name="Omori" parent="." unique_id=1649730196 instance=ExtResource("2")]
 position = Vector2(352, 352)
+
+[node name="Marcador" type="CanvasLayer" parent="." unique_id=1720644128]
+
+[node name="Puntaje" type="Label" parent="Marcador" unique_id=2011159470]
+offset_left = 37.0
+offset_top = 28.0
+offset_right = 780.0
+offset_bottom = 81.0
+theme_override_colors/font_color = Color(0.0050259335, 0.30270347, 0.33077088, 1)
+theme_override_font_sizes/font_size = 28
+text = "Puntaje: 0"
+
+[node name="Mensaje" type="Label" parent="Marcador" unique_id=1062451988]
+offset_left = -1.0
+offset_top = 77.0
+offset_right = 657.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(0.0050259335, 0.30270347, 0.33077088, 1)
+theme_override_font_sizes/font_size = 30
