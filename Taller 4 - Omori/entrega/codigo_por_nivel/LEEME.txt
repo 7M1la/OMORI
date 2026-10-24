@@ -1,0 +1,3 @@
+Código por nivel para el documento de entrega.
+El nivel 3 (y los extras) es el código final del proyecto: dulce.gd, algo.gd y mundo.gd en la raíz.
+Esta carpeta tiene un .gdignore en "entrega/", así que Godot no la importa.

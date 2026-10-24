@@ -1,0 +1,31 @@
+Salida de consola de las pruebas (Godot 4.7).
+
+== Nivel 1/2: recoger todo, con dos jugos seguidos (t=0 s y t=3 s) — versión final con Timer ==
+recogida: +50
+quedan según el grupo: 11 | según el contador: 10
+poder: sí (t = 0.22 s)
+recogida: +50
+quedan según el grupo: 10 | según el contador: 9
+poder: sí (t = 3.28 s)
+recogida: +10   (x9)
+...
+quedan según el grupo: 1 | según el contador: 0     <- el grupo da 1 con el último; el contador da 0
+victoria con puntaje 190
+poder: no (t = 11.28 s)                              <- 8 s después del SEGUNDO jugo
+
+== Mismo caso con la versión del nivel 2 (await) ==
+poder: sí (t = 0.22 s)
+poder: sí (t = 3.29 s)
+poder: no (t = 8.21 s)                               <- se apaga 8 s después del PRIMER jugo (error)
+poder: no (t = 11.28 s)
+
+== Nivel 3: Algos, vidas, doble toque ==
+Algo tocó a Omori. Vidas: 2
+Susto: empieza
+toque ignorado (asustado=true, terminado=false)      <- segundo toque en el mismo instante: no quita vida
+Susto: terminó en 0.745 s, 45 frames de física
+Despierta en (352.0, 352.0)
+poder: sí
+¡Algo espantado! +200                                <- con poder: +200 y el Algo vuelve a su x inicial
+Algo tocó a Omori. Vidas: 1
+Algo tocó a Omori. Vidas: 0                          <- "Perdiste" y Omori deja de moverse
