@@ -4,9 +4,9 @@ extends Area2D
 
 signal toco_al_jugador(algo)
 
-@export var speed = 80.0          # px/s; con 0 se queda quieto
+@export var speed = 80.0         # px/s; con 0 se queda quieto
 @export var distancia = 100.0     # cuánto se aleja de su punto inicial, a cada lado
-@export var vertical = false      # Extra 2: false = vaivén horizontal, true = vertical
+@export var vertical = false      # false = vaivén horizontal, true = vertical
 
 var inicio = Vector2.ZERO
 var direccion = 1
@@ -31,14 +31,12 @@ func _physics_process(delta):
 
 
 func volver_a_casa():
-	# Lo deja en su x inicial (o su y inicial si es vertical).
-	if vertical:
-		position.y = inicio.y
-	else:
-		position.x = inicio.x
+	# Lo deja en su posición inicial según corresponda
+	position = inicio
 	direccion = 1
 
 
 func _on_body_entered(body):
-	if body.is_in_group("jugador"):
+	# Detecta cualquiera de los dos grupos por si acaso tu jugador se llama "jugador" u "omori"
+	if body.is_in_group("jugador") or body.is_in_group("omori"):
 		toco_al_jugador.emit(self)
