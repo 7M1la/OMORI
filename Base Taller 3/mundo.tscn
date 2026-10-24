@@ -30,6 +30,15 @@ offset_bottom = 120.0
 theme_override_colors/font_color = Color(0.0050259335, 0.30270347, 0.33077088, 1)
 theme_override_font_sizes/font_size = 30
 
+[node name="Vidas" type="Label" parent="Marcador"]
+offset_left = 300.0
+offset_top = 28.0
+offset_right = 780.0
+offset_bottom = 81.0
+theme_override_colors/font_color = Color(0.0050259335, 0.30270347, 0.33077088, 1)
+theme_override_font_sizes/font_size = 28
+text = "Vidas: 3"
+
 [node name="TimerPoder" type="Timer" parent="." unique_id=1583920471]
 wait_time = 8.0
 one_shot = true
