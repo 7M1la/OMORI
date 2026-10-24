@@ -1,16 +1,17 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1792856882
-algo.tscn::PackedScene::1025916657924757464::1792855848::0::1::::<><><>0<>0<><>::uid://dmqlih0dwsl5w::::res://assets/algo.png<>uid://buaeo6vi35u6v::::res://algo.gd
+::res://::1792873828
+algo.gd::GDScript::3644393445121019056::1792872830::0::1::::<>Area2D<><>0<>0<><>::
+algo.tscn::PackedScene::1025916657924757464::1792857725::0::1::::<><><>0<>0<><>::uid://dmqlih0dwsl5w::::res://assets/algo.png<>uid://br6mvlq0ianoa::::res://algo.gd
 bloques.gd::GDScript::3857457434286642581::1792854789::0::1::::<>Node2D<><>0<>0<><>::
-dulce.gd::GDScript::6914869686760533245::1792856857::0::1::::<>Area2D<><>0<>0<><>::
-dulce.tscn::PackedScene::7668013812942544781::1792856867::0::1::::<><><>0<>0<><>::uid://dcdksaep01q4x::::res://assets/dulce.png<>uid://c5ru5m31tk7nd::::res://dulce.gd
+dulce.gd::GDScript::6914869686760533245::1792870595::0::1::::<>Area2D<><>0<>0<><>::
+dulce.tscn::PackedScene::7668013812942544781::1792860264::0::1::::<><><>0<>0<><>::uid://dcdksaep01q4x::::res://assets/dulce.png<>uid://c5ru5m31tk7nd::::res://dulce.gd
 icon.svg::CompressedTexture2D::2507594024588367087::1792854789::1792854886::1::::<><><>0<>0<>50dff1a9fcbd14963b74686a54abfaa3<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 jugador.gd::GDScript::7058452725840839797::1792854789::0::1::::<>CharacterBody2D<><>0<>0<><>::
-jugador.tscn::PackedScene::7164967411964546879::1792854789::0::1::::<><><>0<>0<><>::uid://dkb73xrh2wxu1::::res://assets/asustado 1.png<>uid://bu6ox0vvh0em5::::res://assets/asustado 2.png<>uid://12chwl60m5fq::::res://assets/atras 1.png<>uid://cnk8my1l3a7q::::res://assets/arriba 2.png<>uid://dqlqdw517xbx8::::res://assets/asustado 3.png<>uid://iq7x4qw4rg82::::res://assets/asustado 4.png<>uid://b2abl2dbfjrck::::res://assets/arriba 1.png<>uid://dtvpxg3e5w0os::::res://assets/derecha 1.png<>uid://dorhid5hbucge::::res://assets/asustado 5.png<>uid://dqt6dag7hcdu6::::res://assets/derecha 2.png<>uid://dvhgxtlu3tgb2::::res://assets/asustado 6.png<>uid://dodecmh8gyefu::::res://assets/derecha 3.png<>uid://g7fkhanly60x::::res://assets/frente 1.png<>uid://dtfanhp05kp4h::::res://assets/frente 3.png<>uid://bnqjgrclwkibm::::res://assets/frente 2.png<>uid://bh8gsn3crv6uy::::res://assets/pasos.wav<>uid://bp2lmo1d0wshr::::res://assets/susto.wav<>uid://c7tfxka2t43h6::::res://jugador.gd
-jugo.tscn::PackedScene::4458726927164253257::1792855848::0::1::::<><><>0<>0<><>::uid://c7dfyh843chxd::::res://assets/jugo.png<>uid://bcgotmcp2y6dc::::res://dulce.gd
+jugador.tscn::PackedScene::7164967411964546879::1792857777::0::1::::<><><>0<>0<><>::uid://dkb73xrh2wxu1::::res://assets/asustado 1.png<>uid://bu6ox0vvh0em5::::res://assets/asustado 2.png<>uid://12chwl60m5fq::::res://assets/atras 1.png<>uid://cnk8my1l3a7q::::res://assets/arriba 2.png<>uid://dqlqdw517xbx8::::res://assets/asustado 3.png<>uid://iq7x4qw4rg82::::res://assets/asustado 4.png<>uid://b2abl2dbfjrck::::res://assets/arriba 1.png<>uid://dtvpxg3e5w0os::::res://assets/derecha 1.png<>uid://dorhid5hbucge::::res://assets/asustado 5.png<>uid://dqt6dag7hcdu6::::res://assets/derecha 2.png<>uid://dvhgxtlu3tgb2::::res://assets/asustado 6.png<>uid://dodecmh8gyefu::::res://assets/derecha 3.png<>uid://g7fkhanly60x::::res://assets/frente 1.png<>uid://dtfanhp05kp4h::::res://assets/frente 3.png<>uid://bnqjgrclwkibm::::res://assets/frente 2.png<>uid://bh8gsn3crv6uy::::res://assets/pasos.wav<>uid://bp2lmo1d0wshr::::res://assets/susto.wav<>uid://c7tfxka2t43h6::::res://jugador.gd
+jugo.tscn::PackedScene::4458726927164253257::1792870595::0::1::::<><><>0<>0<><>::uid://c7dfyh843chxd::::res://assets/jugo.png<>uid://c5ru5m31tk7nd::::res://dulce.gd
 LEEME.txt::TextFile::-1::1792854789::0::1::::<><><>0<>0<><>::
-mundo.gd::GDScript::2779836607382213283::1792856663::0::1::::<>Node2D<><>0<>0<><>::
-mundo.tscn::PackedScene::5955438037620022264::1792856663::0::1::::<><><>0<>0<><>::uid://bfutrdho4hcid::::res://mundo.gd<>uid://dac074h0tybkx::::res://jugador.tscn
+mundo.gd::GDScript::2779836607382213283::1792873801::0::1::::<>Node2D<><>0<>0<><>::
+mundo.tscn::PackedScene::5955438037620022264::1792873801::0::1::::<><><>0<>0<><>::uid://bfutrdho4hcid::::res://mundo.gd<>uid://dac074h0tybkx::::res://jugador.tscn
 ::res://assets/::1792856462
 algo.png::CompressedTexture2D::8035240798522306766::1792725738::1792856462::1::::<><><>0<>0<>d0be2fed7ef69a9aacc8d83f7bf182e3<>res://.godot/imported/algo.png-7f259836554eadc28a341308bb504fc7.ctex::
 arriba 1.png::CompressedTexture2D::4281601245463053450::1792854789::1792854886::1::::<><><>0<>0<>f72dce878274d9c500ffe378065d8f8e<>res://.godot/imported/arriba 1.png-caa4677f13c91e49ec56179750093254.ctex::

@@ -23,7 +23,7 @@ theme_override_font_sizes/font_size = 28
 text = "Puntaje: 0"
 
 [node name="Mensaje" type="Label" parent="Marcador" unique_id=1062451988]
-offset_left = -1.0
+offset_left = 39.0
 offset_top = 77.0
 offset_right = 657.0
 offset_bottom = 120.0

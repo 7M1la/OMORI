@@ -22,11 +22,16 @@ var algo_escena = preload("res://algo.tscn")
 
 var puntaje = 0
 var modo_poder = false
+var vidas = 3
+
+@onready var jugador = $Omori
 
 func _ready():
 	construir()
 	for item in get_tree().get_nodes_in_group("dulces"):
 		item.recogido.connect(_on_recogido)
+	for enemigo in get_tree().get_nodes_in_group("enemigos"):
+		enemigo.toco_al_jugador.connect(_on_enemigo_toco)
 	$TimerPoder.timeout.connect(_on_timer_poder_timeout)
 
 func construir():
@@ -74,3 +79,26 @@ func _on_timer_poder_timeout():
 func pintar_algos(color: Color):
 	for enemigo in get_tree().get_nodes_in_group("enemigos"):
 		enemigo.modulate = color
+		
+#funcion para  cualdo se toca a los algo
+func _on_enemigo_toco(enemigo):
+	#  Si Omori está asustado, o el juego ya terminó, no hacer nada.
+	if jugador.asustado or vidas <= 0:
+		return
+	
+	# si Omori tiene poder el Algo vuelve a casa y se suman 200 puntos
+	if modo_poder:
+		enemigo.volver_a_casa()
+		puntaje += 200
+		$Marcador/Puntaje.text = "Puntaje: %d" % puntaje
+	#  Si omori toca al algo sin poder
+	else:
+		# Una vida menos.
+		vidas -= 1
+		# Si quedan 0, se peierde y Omori deja de moverse
+		if vidas <= 0:
+			$Marcador/Mensaje.text = "Perdiste"
+			jugador.set_physics_process(false)
+		# Si no se llama la función de asustarse
+		else:
+			jugador.asustarse()
