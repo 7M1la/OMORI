@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b4r3t0ycngdwr"]
+
+[ext_resource type="Texture2D" uid="uid://c7dfyh843chxd" path="res://assets/jugo.png" id="1"]
+[ext_resource type="Script" uid="uid://bcgotmcp2y6dc" path="res://dulce.gd" id="1_6xxbe"]
+
+[sub_resource type="CircleShape2D" id="Forma"]
+radius = 14.0
+
+[node name="Jugo" type="Area2D" unique_id=1490706562 groups=["dulces"]]
+script = ExtResource("1_6xxbe")
+valor = 50
+da_poder = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=192376807]
+texture = ExtResource("1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1937410532]
+shape = SubResource("Forma")

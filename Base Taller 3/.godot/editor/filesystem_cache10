@@ -1,0 +1,39 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1792856882
+algo.tscn::PackedScene::1025916657924757464::1792855848::0::1::::<><><>0<>0<><>::uid://dmqlih0dwsl5w::::res://assets/algo.png<>uid://buaeo6vi35u6v::::res://algo.gd
+bloques.gd::GDScript::3857457434286642581::1792854789::0::1::::<>Node2D<><>0<>0<><>::
+dulce.gd::GDScript::6914869686760533245::1792856857::0::1::::<>Area2D<><>0<>0<><>::
+dulce.tscn::PackedScene::7668013812942544781::1792856867::0::1::::<><><>0<>0<><>::uid://dcdksaep01q4x::::res://assets/dulce.png<>uid://c5ru5m31tk7nd::::res://dulce.gd
+icon.svg::CompressedTexture2D::2507594024588367087::1792854789::1792854886::1::::<><><>0<>0<>50dff1a9fcbd14963b74686a54abfaa3<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+jugador.gd::GDScript::7058452725840839797::1792854789::0::1::::<>CharacterBody2D<><>0<>0<><>::
+jugador.tscn::PackedScene::7164967411964546879::1792854789::0::1::::<><><>0<>0<><>::uid://dkb73xrh2wxu1::::res://assets/asustado 1.png<>uid://bu6ox0vvh0em5::::res://assets/asustado 2.png<>uid://12chwl60m5fq::::res://assets/atras 1.png<>uid://cnk8my1l3a7q::::res://assets/arriba 2.png<>uid://dqlqdw517xbx8::::res://assets/asustado 3.png<>uid://iq7x4qw4rg82::::res://assets/asustado 4.png<>uid://b2abl2dbfjrck::::res://assets/arriba 1.png<>uid://dtvpxg3e5w0os::::res://assets/derecha 1.png<>uid://dorhid5hbucge::::res://assets/asustado 5.png<>uid://dqt6dag7hcdu6::::res://assets/derecha 2.png<>uid://dvhgxtlu3tgb2::::res://assets/asustado 6.png<>uid://dodecmh8gyefu::::res://assets/derecha 3.png<>uid://g7fkhanly60x::::res://assets/frente 1.png<>uid://dtfanhp05kp4h::::res://assets/frente 3.png<>uid://bnqjgrclwkibm::::res://assets/frente 2.png<>uid://bh8gsn3crv6uy::::res://assets/pasos.wav<>uid://bp2lmo1d0wshr::::res://assets/susto.wav<>uid://c7tfxka2t43h6::::res://jugador.gd
+jugo.tscn::PackedScene::4458726927164253257::1792855848::0::1::::<><><>0<>0<><>::uid://c7dfyh843chxd::::res://assets/jugo.png<>uid://bcgotmcp2y6dc::::res://dulce.gd
+LEEME.txt::TextFile::-1::1792854789::0::1::::<><><>0<>0<><>::
+mundo.gd::GDScript::2779836607382213283::1792856663::0::1::::<>Node2D<><>0<>0<><>::
+mundo.tscn::PackedScene::5955438037620022264::1792856663::0::1::::<><><>0<>0<><>::uid://bfutrdho4hcid::::res://mundo.gd<>uid://dac074h0tybkx::::res://jugador.tscn
+::res://assets/::1792856462
+algo.png::CompressedTexture2D::8035240798522306766::1792725738::1792856462::1::::<><><>0<>0<>d0be2fed7ef69a9aacc8d83f7bf182e3<>res://.godot/imported/algo.png-7f259836554eadc28a341308bb504fc7.ctex::
+arriba 1.png::CompressedTexture2D::4281601245463053450::1792854789::1792854886::1::::<><><>0<>0<>f72dce878274d9c500ffe378065d8f8e<>res://.godot/imported/arriba 1.png-caa4677f13c91e49ec56179750093254.ctex::
+arriba 2.png::CompressedTexture2D::167881367757998112::1792854789::1792854886::1::::<><><>0<>0<>b0fa739425b03fa06239acdceade1f41<>res://.godot/imported/arriba 2.png-6647255172508611a40cca2f8cfceb31.ctex::
+arriba.png::CompressedTexture2D::8946064098545962997::1792854789::1792854886::1::::<><><>0<>0<>f52e97c3dba4d452a23876fb4352db3c<>res://.godot/imported/arriba.png-8ba86f585e32d785b9c888b63ed9d2b1.ctex::
+asustado 1.png::CompressedTexture2D::7865209045865300126::1792854789::1792854886::1::::<><><>0<>0<>fe940db139738e0dda6e14fd864fc7ec<>res://.godot/imported/asustado 1.png-3197b792caf383e37b0ed4bb4a64e2d9.ctex::
+asustado 2.png::CompressedTexture2D::3855085724477277150::1792854789::1792854886::1::::<><><>0<>0<>87cbbe08863c871abf2903dfbc0fd7fa<>res://.godot/imported/asustado 2.png-d74600376e52c075bae70388f3c0c138.ctex::
+asustado 3.png::CompressedTexture2D::8305969736931282347::1792854789::1792854886::1::::<><><>0<>0<>545acd68ed28484df297a189db24e487<>res://.godot/imported/asustado 3.png-4e35a7a23b171caa3b412187ae051140.ctex::
+asustado 4.png::CompressedTexture2D::596526359130589101::1792854789::1792854886::1::::<><><>0<>0<>cf7cf18d8736baa76cb9e1e42054551d<>res://.godot/imported/asustado 4.png-87c74e5b9533d7c3a86df055dc29c79e.ctex::
+asustado 5.png::CompressedTexture2D::8177439793365732968::1792854789::1792854886::1::::<><><>0<>0<>38f2b24a9438c3c8f0f03c6af38e7ba1<>res://.godot/imported/asustado 5.png-be73321530089c36e94ffc806470bada.ctex::
+asustado 6.png::CompressedTexture2D::8648084802856194029::1792854789::1792854886::1::::<><><>0<>0<>99287d02439d8743359f4f686380414c<>res://.godot/imported/asustado 6.png-60b6d3bb62f6a26a896cefa9a844baa0.ctex::
+atras 1.png::CompressedTexture2D::1880783242440287938::1792854789::1792854886::1::::<><><>0<>0<>b1320366a70399ee7cc470cc44828e91<>res://.godot/imported/atras 1.png-fe28c657c80edefca02aa7fd30971acc.ctex::
+derecha 1.png::CompressedTexture2D::8537154199805833698::1792854789::1792854886::1::::<><><>0<>0<>3a09de049cbb64442d252422753aa759<>res://.godot/imported/derecha 1.png-ba2a7c4beab49c1ef61dac177eccefd6.ctex::
+derecha 2.png::CompressedTexture2D::8323394321504629331::1792854789::1792854886::1::::<><><>0<>0<>7501876395b82e01619c31fc5dd85ee4<>res://.godot/imported/derecha 2.png-6cdc309620f77e86f05c59f681f9b1da.ctex::
+derecha 3.png::CompressedTexture2D::8148346077434979278::1792854789::1792854886::1::::<><><>0<>0<>5fbe31204348736033b6a70fd7953f20<>res://.godot/imported/derecha 3.png-1a36ece657c4d77a224c62aa5eefa9ae.ctex::
+derecha.png::CompressedTexture2D::6362163724134477597::1792854789::1792854886::1::::<><><>0<>0<>d9fce649ea03d24f78b8adf88b7d8fbb<>res://.godot/imported/derecha.png-8f15a5a3d4d47df2ba96bbe7f051b99a.ctex::
+dulce.png::CompressedTexture2D::7306472192730698865::1792725738::1792856462::1::::<><><>0<>0<>7cb01195981724421b55169fcd9a7a17<>res://.godot/imported/dulce.png-cde22e31b22644c13a2c73c6426a393b.ctex::
+frente 1.png::CompressedTexture2D::487514961130779637::1792854789::1792854886::1::::<><><>0<>0<>703353031bee6c66397500b0e10654b0<>res://.godot/imported/frente 1.png-09d4d74806bfefc4b7e361688d4c6e42.ctex::
+frente 2.png::CompressedTexture2D::3332463759266958686::1792854789::1792854886::1::::<><><>0<>0<>33feb6641eec54fadfc82ccca9056554<>res://.godot/imported/frente 2.png-dbccdc32dba07587463d8602c2303cd3.ctex::
+frente 3.png::CompressedTexture2D::8503195576304885293::1792854789::1792854886::1::::<><><>0<>0<>a30e56decffedbf110868bdb6cda2898<>res://.godot/imported/frente 3.png-5832ffcbb63e39709a6165cf442f64ec.ctex::
+frente.png::CompressedTexture2D::1068357824649922126::1792854789::1792854886::1::::<><><>0<>0<>7b859510de8388876959196ba5aef61a<>res://.godot/imported/frente.png-df830cfe6e471086ffffa9981fd98813.ctex::
+izquierda.png::CompressedTexture2D::2032793036567466046::1792854789::1792854886::1::::<><><>0<>0<>ea10884a0c2902d53e2598746732c3f0<>res://.godot/imported/izquierda.png-19b04384297cbd13090b8938511ef8b4.ctex::
+jugo.png::CompressedTexture2D::7025424361080096477::1792725738::1792856462::1::::<><><>0<>0<>1c3dada3287143a6efcf67e1be0f9b8a<>res://.godot/imported/jugo.png-0aebd150dc2606bd2b80b32efa6486f5.ctex::
+omori_hoja.png::CompressedTexture2D::5513617274336493694::1792854789::1792854886::1::::<><><>0<>0<>1612d26398363121c1000dc65b7eac6e<>res://.godot/imported/omori_hoja.png-b46af8e75582dd825b60848f75f1f59c.ctex::
+pasos.wav::AudioStreamWAV::2946264227462713268::1792854789::1792854886::1::::<><><>0<>0<>ad4b8a208dd55f3bc890d7faad5d195a<>res://.godot/imported/pasos.wav-62f2175e0ab4aa325598d0f0f2b90a70.sample::
+susto.wav::AudioStreamWAV::3495681629732907879::1792854789::1792854886::1::::<><><>0<>0<>609af086df0cde8d55cef0335bb5315a<>res://.godot/imported/susto.wav-9f32d012453406d1c1459d886f991a6a.sample::

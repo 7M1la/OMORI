@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dhipcjw1gbc0l"]
+
+[ext_resource type="Texture2D" uid="uid://dcdksaep01q4x" path="res://assets/dulce.png" id="1"]
+[ext_resource type="Script" uid="uid://c5ru5m31tk7nd" path="res://dulce.gd" id="1_cfsl6"]
+
+[sub_resource type="CircleShape2D" id="Forma"]
+radius = 12.0
+
+[node name="Dulce" type="Area2D" unique_id=2140762580 groups=["dulces"]]
+script = ExtResource("1_cfsl6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=437534971]
+texture = ExtResource("1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1798158430]
+shape = SubResource("Forma")

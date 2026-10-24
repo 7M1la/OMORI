@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://ou7xyjjhvxwy"]
+
+[ext_resource type="Texture2D" uid="uid://dmqlih0dwsl5w" path="res://assets/algo.png" id="1"]
+[ext_resource type="Script" uid="uid://br6mvlq0ianoa" path="res://algo.gd" id="1_njfix"]
+
+[sub_resource type="CircleShape2D" id="Forma"]
+radius = 22.0
+
+[node name="Algo" type="Area2D" unique_id=267459765 groups=["enemigos"]]
+script = ExtResource("1_njfix")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1566943200]
+texture = ExtResource("1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=64219690]
+shape = SubResource("Forma")
