@@ -69,8 +69,16 @@ func _on_recogido(valor, da_poder):
 	if da_poder:
 		activar_poder()
 	dulcesRestantes -= 1
+	acelerar_enemigo(20.0)
 	if dulcesRestantes <= 0: 
 		$Marcador/Mensaje.text = "¡Encontraste todo!"
+		
+	
+func acelerar_enemigo(cantidad: float):
+	for enemigo in get_tree().get_nodes_in_group("enemigos"):
+		if "speed" in enemigo:
+			enemigo.speed += cantidad
+			
 
 func activar_poder():
 	modo_poder = true
